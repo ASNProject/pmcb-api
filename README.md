@@ -5,7 +5,7 @@
 ### Clone
 - Clone this project
 ```
-Link
+git clone https://github.com/ASNProject/pmcb-api.git
 ```
 - Insert db_pmcb in xampp or other localhost
 ### Run 
