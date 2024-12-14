@@ -1,3 +1,12 @@
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
+
 # PMCB API
 - Laravel Version ``` 8.83.29``` 
 
@@ -75,11 +84,26 @@ Note: if you use localhost server
 /logout
 ```
 - Header:
-|  Key          | Value                |
-|---------------|----------------------|
-| Accept        | application/json     |
-| Content-Type  | application/json     |
-| Authorization | Bearer <spasi> Token | 
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Accept</td>
+    <td>application/json</td>
+  </tr>
+  <tr>
+    <td>Content-Type</td>
+    <td>application/json</td>
+  </tr>
+  <tr>
+    <td>Authorization</td>
+    <td>Bearer &lt;spasi&gt; Token</td>
+  </tr>
+</table>
+
+ 
 - Response:
 ```
 {
@@ -92,11 +116,25 @@ Note: if you use localhost server
 /user
 ```
 - Header:
-|  Key          | Value                |
-|---------------|----------------------|
-| Accept        | application/json     |
-| Content-Type  | application/json     |
-| Authorization | Bearer <spasi> Token | 
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Accept</td>
+    <td>application/json</td>
+  </tr>
+  <tr>
+    <td>Content-Type</td>
+    <td>application/json</td>
+  </tr>
+  <tr>
+    <td>Authorization</td>
+    <td>Bearer &lt;spasi&gt; Token</td>
+  </tr>
+</table>
+ 
 - Response:
 ```
 {
