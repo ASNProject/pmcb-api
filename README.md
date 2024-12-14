@@ -27,7 +27,7 @@ php artisan serve
 ## Route API
 base route: ``` localhost/api```
 Note: if you use localhost server
-##### 1. Register
+#### 1. Register
 ```
 /register
 ```
@@ -53,7 +53,7 @@ Note: if you use localhost server
     }
 }
 ```
-##### 2. Login
+#### 2. Login
 ```
 /login
 ```
@@ -79,7 +79,7 @@ Note: if you use localhost server
     "token": "xxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
-##### 3. Logout
+#### 3. Logout
 ```
 /logout
 ```
@@ -111,7 +111,7 @@ Note: if you use localhost server
     "message": "Logout Berhasil!"
 }
 ```
-##### 4. Get User
+#### 4. Get User
 ```
 /user
 ```
@@ -146,7 +146,7 @@ Note: if you use localhost server
     "updated_at": "2024-12-14T07:07:45.000000Z"
 }
 ```
-##### 5. Create New Voltage Data
+#### 5. Create New Voltage Data
 ```
 /voltage
 ```
@@ -164,7 +164,7 @@ Note: if you use localhost server
     "message": "Data berhasil disimpan"
 }
 ```
-##### 6. Get All Voltage Data
+#### 6. Get All Voltage Data
 ```
 /voltage
 ```
@@ -201,7 +201,7 @@ Note: if you use localhost server
     ]
 }
 ```
-##### 7. Detail Voltage Data by id
+#### 7. Detail Voltage Data by id
 ```
 /voltage/{id?}
 ```
@@ -219,7 +219,7 @@ Note: if you use localhost server
     }
 }
 ```
-##### 8. Update Voltage Data
+#### 8. Update Voltage Data
 ```
 /voltage
 ```
@@ -238,7 +238,7 @@ Note: if you use localhost server
     "message": "Data berhasil diperbaharui"
 }
 ```
-##### 9. Delete Voltage Data
+#### 9. Delete Voltage Data
 ```
 /voltage/{id?}
 ```
