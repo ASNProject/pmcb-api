@@ -25,7 +25,7 @@ php artisan serve
 ```
 
 ## Route API
-base route: ``` localhost/api```
+base route: ``` localhost:8000/api```
 Note: if you use localhost server
 #### 1. Register
 ```
