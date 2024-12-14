@@ -39,3 +39,34 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  * @method "POST"
  */
 Route::post('/logout', \App\Http\Controllers\Api\LogoutController::class)->name('logout');
+
+/**
+ * route "/voltage"
+ * @method "POST"
+ */
+Route::post('/voltage', '\App\Http\Controllers\Api\VoltageController@store');
+
+/**
+ * route "/voltage"
+ * @method "GET"
+ */
+Route::get('/voltage', '\App\Http\Controllers\Api\VoltageController@index');
+
+/**
+ * route "/voltage/{id}"
+ * @method "GET"
+ */
+Route::get('/voltage/{id?}', '\App\Http\Controllers\Api\VoltageController@show');
+
+/**
+ * route "/voltage/update}"
+ * @method "POST"
+ */
+Route::post('/voltage/update', '\App\Http\Controllers\Api\VoltageController@update');
+
+/**
+ * route "/voltage/{id}"
+ * @method "DELETE"
+ */
+Route::delete('/voltage/{id?}', '\App\Http\Controllers\Api\VoltageController@destroy');
+

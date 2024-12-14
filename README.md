@@ -27,7 +27,7 @@ php artisan serve
 ## Route API
 base route: ``` localhost/api```
 Note: if you use localhost server
-1. Register
+##### 1. Register
 ```
 /register
 ```
@@ -53,7 +53,7 @@ Note: if you use localhost server
     }
 }
 ```
-2. Login
+##### 2. Login
 ```
 /login
 ```
@@ -79,7 +79,7 @@ Note: if you use localhost server
     "token": "xxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
-3. Logout
+##### 3. Logout
 ```
 /logout
 ```
@@ -111,7 +111,7 @@ Note: if you use localhost server
     "message": "Logout Berhasil!"
 }
 ```
-3. Get User
+##### 4. Get User
 ```
 /user
 ```
@@ -144,5 +144,108 @@ Note: if you use localhost server
     "email_verified_at": null,
     "created_at": "2024-12-14T07:07:45.000000Z",
     "updated_at": "2024-12-14T07:07:45.000000Z"
+}
+```
+##### 5. Create New Voltage Data
+```
+/voltage
+```
+- Request:
+```
+{
+    "time" : "input-time",
+    "voltage": "input-voltage",
+}
+```
+- Response:
+```
+{
+    "success": true,
+    "message": "Data berhasil disimpan"
+}
+```
+##### 6. Get All Voltage Data
+```
+/voltage
+```
+- Parameter
+  - For filter by range
+    ```
+    start_date #2024-12-14
+    end_date #2024-12-14
+    ```
+  - For filter by date
+    ```
+    date #2024-12-14
+    ```
+- Response:
+```
+{
+    "success": true,
+    "message": "Data Voltage",
+    "data": [
+        {
+            "id": 2,
+            "time": "456",
+            "voltage": "1000",
+            "created_at": "2024-12-14T10:05:51.000000Z",
+            "updated_at": "2024-12-14T10:05:51.000000Z"
+        },
+        {
+            "id": 1,
+            "time": "231",
+            "voltage": "12345",
+            "created_at": "2024-12-14T09:03:14.000000Z",
+            "updated_at": "2024-12-14T09:56:02.000000Z"
+        }
+    ]
+}
+```
+##### 7. Detail Voltage Data by id
+```
+/voltage/{id?}
+```
+- Response:
+```
+{
+    "success": true,
+    "message": "Detail Voltage",
+    "data": {
+        "id": 1,
+        "time": "231",
+        "voltage": "12345",
+        "created_at": "2024-12-14T09:03:14.000000Z",
+        "updated_at": "2024-12-14T09:56:02.000000Z"
+    }
+}
+```
+##### 8. Update Voltage Data
+```
+/voltage
+```
+- Request:
+```
+{
+    "id"  : "input_id",
+    "time" : "input-time",
+    "voltage": "input-voltage",
+}
+```
+- Response:
+```
+{
+    "success": true,
+    "message": "Data berhasil diperbaharui"
+}
+```
+##### 9. Delete Voltage Data
+```
+/voltage/{id?}
+```
+- Response:
+```
+{
+    "success": true,
+    "message": "Data berhasil dihapus!"
 }
 ```
