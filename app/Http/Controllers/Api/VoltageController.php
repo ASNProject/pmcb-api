@@ -70,7 +70,7 @@ class VoltageController extends Controller
         }
 
         // Ambil data dengan urutan rentan terbaru
-        $voltage = $voltageQuery->latest()->get();
+        $voltage = $voltageQuery->get();
 
         return response([
             'success' => true,
