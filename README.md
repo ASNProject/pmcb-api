@@ -23,6 +23,10 @@ git clone https://github.com/ASNProject/pmcb-api.git
 ```
 php artisan serve
 ```
+Or (to Development with localhost)
+```
+php artisan serve --host=0.0.0.0 --port=8000
+```
 
 ## Route API
 base route: ``` localhost:8000/api```
