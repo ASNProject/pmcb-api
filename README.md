@@ -16,7 +16,7 @@
 ```
 git clone https://github.com/ASNProject/pmcb-api.git
 ```
-- Insert db_pmcb in xampp or other localhost
+- Insert db_pmcb in xampp or other localhost (folder db_sql)
 ### Run 
 - Open this project in Code Editor (VSCode)
 - Run this command
